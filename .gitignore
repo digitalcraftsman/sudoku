@@ -1,0 +1,3 @@
+*.txt
+coverage.out
+*.coverprofile
