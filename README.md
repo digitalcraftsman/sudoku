@@ -1,6 +1,6 @@
 # Sudoku solver [![GoDoc](https://godoc.org/github.com/digitalcraftsman/sudoku/solver?status.svg)](https://godoc.org/github.com/digitalcraftsman/sudoku/solver)
 
-You've found a Sudoku solver written in pure Go.
+You've found a Sudoku solver written in pure Go. Helllo
 
 ## How to get started?
 
