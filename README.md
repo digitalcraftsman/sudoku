@@ -2,6 +2,16 @@
 
 You've found a Sudoku solver written in pure Go.
 
+## Installation
+
+Install it in usual way.
+
+```
+$ go get -u github.com/yogesh-desai/sudoku
+
+```
+
+
 ## How to get started?
 
 The solver expects the Sudoku to be formatted like below:
