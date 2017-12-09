@@ -7,7 +7,7 @@ You've found a Sudoku solver written in pure Go.
 Install it in usual way.
 
 ```
-$ go get -u github.com/yogesh-desai/sudoku
+$ go get -u github.com/digitalcraftsman/sudoku
 
 ```
 
