@@ -8,7 +8,6 @@ Install it in usual way.
 
 ```
 $ go get -u github.com/digitalcraftsman/sudoku
-
 ```
 
 
