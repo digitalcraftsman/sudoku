@@ -31,19 +31,22 @@ It uses the incomming input from `stdin` in the terminal to process the Sudoku. 
 
     go run main.go < input.txt
 
-Now you should see the solved Sudoku (if one exists):
+Now you should see pretty version of the solved Sudoku (if one exists):
 
     The Sudoku was solved successfully:
     
-    1 2 3 4 5 6 7 8 9
-    4 5 6 7 8 9 1 2 3
-    7 8 9 1 2 3 4 5 6
-    2 3 4 5 6 7 8 9 1
-    5 6 7 8 9 1 2 3 4
-    8 9 1 2 3 4 5 6 7
-    3 4 5 6 7 8 9 1 2
-    6 7 8 9 1 2 3 4 5
-    9 1 2 3 4 5 6 7 8
+    1 2 3 | 4 5 6 | 7 8 9
+    4 5 6 | 7 8 9 | 1 2 3
+    7 8 9 | 1 2 3 | 4 5 6
+    ------+-------+-------
+    2 3 4 | 5 6 7 | 8 9 1
+    5 6 7 | 8 9 1 | 2 3 4
+    8 9 1 | 2 3 4 | 5 6 7
+    ------+-------+-------
+    3 4 5 | 6 7 8 | 9 1 2
+    6 7 8 | 9 1 2 | 3 4 5
+    9 1 2 | 3 4 5 | 6 7 8
+    ------+-------+-------
 
 
 ## How does it work?
