@@ -65,19 +65,24 @@ func validateInputCell(val string) (int, error) {
 	return digit, nil
 }
 
-// PrintBoard returns a formatted version of the  Sudoku's
-// current state. All digits are seperated by a whitespace.
+// PrintBoard returns a formatted version of the Sudoku's
+// current state. All grids are seperated by a border.
 func (b *Board) String() string {
-	var output string
+	var output strings.Builder
 
 	for i, row := range b.Cells {
 		str := fmt.Sprint(row)
-		output += str[1 : len(str)-1] // trim the array's backets
+		output.WriteString(str[1:6] + " |")
+		output.WriteString(str[6:12] + " |")
+		output.WriteString(str[12:18])
 
+		if (i+1)%3 == 0 {
+			output.WriteString("\n------+-------+-------")
+		}
 		if i+1 < N {
-			output += "\n"
+			output.WriteByte('\n')
 		}
 	}
 
-	return output
+	return output.String()
 }
